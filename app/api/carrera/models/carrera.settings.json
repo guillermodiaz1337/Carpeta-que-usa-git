@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carreras",
+  "info": {
+    "name": "carrera"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "materias": {
+      "via": "carrera",
+      "collection": "materia"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materias",
+  "info": {
+    "name": "materia"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "alumnos": {
+      "collection": "alumno",
+      "via": "materia"
+    },
+    "carrera": {
+      "model": "carrera",
+      "via": "materias"
+    }
+  }
+}

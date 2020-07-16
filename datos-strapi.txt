@@ -1,0 +1,12 @@
+carrera:
+nombre => textfield
+
+materia:
+nombre => textfield
+carrera => relation, 1 carrera muchas materias
+alumnos => relation, 1 materia muchos alumnos
+
+alumno:
+nombre => textfield
+apellido => textfield
+legajo => textfield

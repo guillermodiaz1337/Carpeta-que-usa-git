@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alumnos",
+  "info": {
+    "name": "alumno"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "legajo": {
+      "type": "string"
+    },
+    "materia": {
+      "via": "alumnos",
+      "model": "materia"
+    }
+  }
+}
